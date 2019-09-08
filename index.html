@@ -61,7 +61,7 @@
     <p><b style="font-style: oblique">Inaayatullah international academy, Iwo</b>-o'level <br>september 2012-july 2017 </p>    
 </body>
 <hr>
-<form action="localhost/ibrahimstartng/index.php" method="post">
+<form action="#" method="post">
     <div>
         <label for="title">title of message:</label>
         <input type="text" name="title" >
@@ -82,6 +82,15 @@
         <button type="submit">send your message</button>
     </div>
 </form>
+    <?php
+if(isset($_POST['submit'])){
+    $title=$_POST['title'];
+    $name=$_POST['name'];
+    $email=$_POST['user_email'];
+    $msg=$_POST['user_msg'];
+    echo"<pre>.$title.$name.$email.$msg</pre>";
+}
+?>
     <hr>
 <footer>
         <h2 style="color: deeppink">CONTACT ME</h2>
